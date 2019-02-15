@@ -1,7 +1,7 @@
 /*
 Theme Name: Green Laser
 Version: 1
-Author: Paul Talaga
+Author: Ante Lucev
 */
 
 html, body, div, span, applet, object, iframe,
@@ -25,7 +25,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style-image: url("/images/pixelarrow_b.png");
+	/*list-style-image: url("/images/pixelarrow_b.png");*/
 	padding: 0px 1px 0px 15px;
 }
 li {
@@ -96,7 +96,7 @@ body {
     background-color: #261d89;
     color: #fff;
     padding:40px;
-    background-image: url(/images/bg.png);
+    /*background-image: url(/images/bg.png);*/
     background-repeat: repeat-y;
     background-position: right;
 }
@@ -127,7 +127,7 @@ hr {
 }
 
 .flaare {
-    background-image: url(images/green_line.png);
+    /*background-image: url(images/green_line.png);*/
     background-repeat: no-repeat;
     background-position: right;
 }
