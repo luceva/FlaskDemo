@@ -1,0 +1,24 @@
+<!doctype html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+     <link rel = "stylesheet" type = "text/css" href = "static\myStyle.css">
+</head>
+
+<body>
+<nav>
+  <h1>Welcome to high/low game</h1>
+  <h4>Try to guess a number between 0 and 100!</h4>
+</nav>
+
+<p>{{ answer }} {{ times }} {{ attempt }}</p>
+{% block content %}
+  <form action="/guess" method="get">
+    <label for="b">Your guess:</label>
+    <input name="b" id="b" value="{{ t['b'] }}" required>
+    <input type="submit" value="Submit!">
+  </form>
+{% endblock %}
+<br>
+<a href="{{ url_for('logout') }}">Reset game</a>
+
+</body>

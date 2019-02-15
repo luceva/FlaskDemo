@@ -1,0 +1,20 @@
+Notes:
+
+This is a production container which runs your app in uWSGI and nginx with multiple threads.
+Errors and debugging is not supported.
+
+When in this folder with the Dockerfile, do:
+
+docker build -t prodflask:latest .
+
+to create the docerk image.
+
+When ready to start the server, go back a folder so app is in the directory.
+
+docker run -it -v `pwd`/app:/app -p 3000:80 prodflask
+
+This will run app/main.py as the application on port 3000 on your machine.
+Ctrl-C to exit.
+
+
+
